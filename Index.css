@@ -1,134 +1,213 @@
-*{
-    font-family: Helvetica;
+body {
+    background-color:antiquewhite;
+ }
+ ,::after,*::before{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: inherit; */
 }
-.main-icon img{
-    width: 30px;
-    height: 30px;
+:root {
+    --johncolor: red;
+    --main-margin: 10px 20px;
+    
 }
-.main-icon{
-    display: flex;
-    align-items:center;
-    gap: 5px;
-
+.main-header {
+    margin: var(--main-margin);
+    
 }
-.search-bar{
-    border:2px solid gray;
-    width: 50%;
+.main-icon img {
+    width: 24px;
+    height: 24px;
+}
+.main-icon:hover {
+    cursor: pointer;
+}
+.search-bar {
+    /* height: 10px;
+    border:0.5px solid red;
     border-radius: 30px;
-    border-style: none;
-    border-color: gray;
-    gap: 50px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0,0.9);
-    margin-left: 25%;
-    height: 60px;
-    background-color: rgb(0, 255, 34);
-}
-.search-bar .search-content{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.main-header nav{
-    display: flex;
-    justify-items:center ;
-}
-.search-icon{
-    font-size: 10px;
-    /* margin-bottom: 10px; */
     align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+    height: 29px;
+   
+    padding: 10px 10px;
+    margin-top: 5px; */
+    border-radius: 30px;
+    padding: 1px 10px;
+    border: 0.9px solid grey;
+    font-size: 100px;
+    border-style: none;
+    border-color: grey;
+    /* box-shadow: rgba(0, green, blue, alpha); */
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3) ;
+    
 
 }
+.search-bar :hover{
+    cursor: pointer;
+    box-shadow: grey;
+    
+}
+.main-icon {
+    display: flex;
+    align-items: center;
+    color: var(--johncolor);
+}
+.search-content {
+    align-items: center;
+    display: flex;
+    align-items: center;    
+    padding: 5px 5px;
+    font-size: 10px;
+}
+.main-header nav {
+    display: flex;    
+    justify-content: space-between;
+}
+.search-bar .search-content h3:not(:nth-child(3)) {
+    border-right: 0.5px solid grey;
+    padding: 0 5px;
+    }
+h3:nth-child(3) {
+ padding: 0 5px;
+ color: grey;
+}
+/* makosa ya kwanza */
 .fa-magnifying-glass {
-    background-color: rgb(0, 255, 255);
-    border-radius: 100px;
-    padding: 16px 17px;
+    background-color: red;
     border: none;
-    justify-content: center;
+    border-radius: 100px;
+    font-size: 15px;
+    padding: 7px 7px;
+    display: flex;
+   
+
+}
+.Search-icon {
+    font-size: 0px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
-.search-bar .search-content h1:not(:nth-child(3)){
-    border-right: 0 5px solid rgb(128, 128, 128);
-    padding: 0 5px;
-}
-h1:nth-child(3){
-    padding: 0 5px;
-    color:gray
-}
-.profiles{
+.profiles {
     display: flex;
     gap: 15px;
-    align-items: center;
-    margin-left: 15rem;
-}
-.accounts{
-    border: 0.5px solid gray;
-    border-radius: 14px;
-    padding: 5px 10px;
-    width: 60px;
-    height: 50px;
     display: flex;
-    justify-content: center;
-    box-shadow: 2px 2px 5px 2px;
     align-items: center;
-    color: rgb(157, 255, 0);
 }
-.hero-header nav{
+.profiles h3 {
+    font-size: 15px;
+    color: blue;
+}
+.profiles h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: green;
+}
+.accounts {
     display: flex;
+    gap: 10px;
+    border: 0.5px solid grey;
+    border-radius: 50px;
+    padding: 10px 10px;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3) ;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.accounts :hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px grey;
+    color: brown;
+}
+.nav-links nav div {
+    display: flex;
+    padding: 9px;
+    flex-direction: column;
+    /* background-color: black; */
+    
 }
 .nav-links{
-    width: 80%;
-    overflow: hidden;
+   width: 80%;
+   overflow: hidden;
+   scrollbar-width: none;
+   /* background-color: blue; */
+    display: flex;
     overflow-x: scroll;
     scrollbar-width: none;
-    border-right: 0.2px;
-    border-left: 0.2px solid grey;
+    white-space: nowrap;
+    /* background-color: pink; */
+    border-right: 0.2px solid gray;
     padding: 0px 5px;
-    flex-direction:column ;
-    box-shadow: 2px 2px 4px rgba(0 0 0 0.9);
-    border-radius: 10px;
-    height: 85px;
-    margin-left: 5px;
     border-left: 0.5px solid grey;
-    background-color: blanchedalmond;
-}
-.filter-links{
-    display: flex;
-    gap: 8px;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    background-color: #f7f7f7;
+    padding: 5px;
+    border-left: 0.5px solid grey;
+    height: 60px;
     margin-left: 10px;
-    font-size: 16px;
 }
-.filters{
-    display: flex;
-    align-items: center;
-    border: 0.5px solid grey;
-    border-radius: 20px;
-    padding: 5.5px 10px;
-    gap: 5px;
-    margin-left: 20px;
-}
-.hero-header{
+.hero-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 100%;
+    gap: 10px;
+    align-items: center;
+    /* background-color: red; */
 }
-.taxes{
+nav {
+    display: flex;
+    padding: 5px;
+    gap: 30px;
+}
+.nav-links div{
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.nav-links div h3:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+
+.filter-links {
+    display: flex;
+    gap: 8px;
+    margin-left: 10px; 
+    font-size: 10px;
+
+}
+.filters {
     display: flex;
     align-items: center;
     border: 0.5px solid grey;
-    border-radius: 20px;
+    border-radius:20px ;
     padding: 5.5px 10px;
     gap: 5px;
-    margin-left: 20px;
+    margin-left: 20px; 
+
 }
-.taxes i{
+
+.taxes {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid grey;
+    border-radius:20px;
+    padding: 5.5px 10px;
+    gap: 5px;
+    margin-right: 27px;   
+}
+.taxes i {
     color: gray;
     font-size: 20px;
 }
-.card{
+.filter-links:hover {
+    cursor: pointer;
+    color: green;
+}
+.card {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -137,9 +216,9 @@ h1:nth-child(3){
     align-items: center;
 }
 .card img{
-    width: 230px;
-    height: 150px;
-    border-radius: 15px;
+    width:230px;
+    height:150px ;
+    border-radius:15px ;
     object-fit: cover;
     padding: 10px;
 }
