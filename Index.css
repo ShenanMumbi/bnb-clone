@@ -1,0 +1,145 @@
+*{
+    font-family: Helvetica;
+}
+.main-icon img{
+    width: 30px;
+    height: 30px;
+}
+.main-icon{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+
+}
+.search-bar{
+    border:2px solid gray;
+    width: 50%;
+    border-radius: 30px;
+    border-style: none;
+    border-color: gray;
+    gap: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0,0.9);
+    margin-left: 25%;
+    height: 60px;
+    background-color: rgb(0, 255, 34);
+}
+.search-bar .search-content{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.main-header nav{
+    display: flex;
+    justify-items:center ;
+}
+.search-icon{
+    font-size: 10px;
+    /* margin-bottom: 10px; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.fa-magnifying-glass {
+    background-color: rgb(0, 255, 255);
+    border-radius: 100px;
+    padding: 16px 17px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar .search-content h1:not(:nth-child(3)){
+    border-right: 0 5px solid rgb(128, 128, 128);
+    padding: 0 5px;
+}
+h1:nth-child(3){
+    padding: 0 5px;
+    color:gray
+}
+.profiles{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 15rem;
+}
+.accounts{
+    border: 0.5px solid gray;
+    border-radius: 14px;
+    padding: 5px 10px;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 5px 2px;
+    align-items: center;
+    color: rgb(157, 255, 0);
+}
+.hero-header nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.nav-links{
+    width: 80%;
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    border-right: 0.2px;
+    border-left: 0.2px solid grey;
+    padding: 0px 5px;
+    flex-direction:column ;
+    box-shadow: 2px 2px 4px rgba(0 0 0 0.9);
+    border-radius: 10px;
+    height: 85px;
+    margin-left: 5px;
+    border-left: 0.5px solid grey;
+    background-color: blanchedalmond;
+}
+.filter-links{
+    display: flex;
+    gap: 8px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.filters{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid grey;
+    border-radius: 20px;
+    padding: 5.5px 10px;
+    gap: 5px;
+    margin-left: 20px;
+}
+.hero-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.taxes{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid grey;
+    border-radius: 20px;
+    padding: 5.5px 10px;
+    gap: 5px;
+    margin-left: 20px;
+}
+.taxes i{
+    color: gray;
+    font-size: 20px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 230px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    padding: 10px;
+}
